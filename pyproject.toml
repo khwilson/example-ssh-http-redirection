@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "test-ssh"
+version = "0.1.0"
+description = ""
+authors = ["Kevin H Wilson <khwilson@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "test_ssh"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+asyncssh = "^2.13.1"
+python-dotenv = "^1.0.0"
+httpx = "^0.23.3"
+fastapi = "^0.92.0"
+uvicorn = "^0.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
